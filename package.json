@@ -1,0 +1,14 @@
+{
+  "name": "shoppingcart",
+  "version": "1.0.0",
+  "description": "js project",
+  "main": "app.js",
+  "scripts": {
+    "test": "shoppiing cart"
+  },
+  "author": "sujin",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^8.2.7"
+  }
+}
