@@ -49,12 +49,12 @@ class UI {
             />
             <button class="bag-btn" data-id=${product.id}>
               <i class="fas fa-shopping-cart">
-                add to back
+                add to cart
               </i>
             </button>
           </div>
           <h3>${product.title}</h3>
-          <h4>${product.price}</h4>
+          <h4>$${product.price}</h4>
         </article>
        
         `;
@@ -69,7 +69,7 @@ class UI {
       let id = button.dataset.id;
       let inCart = cart.find((item) => item.id === id);
       if (inCart) {
-        button.innerText = "In Cart";
+        button.innerText = "In cart";
         button.disabled = true;
       }
       button.addEventListener("click", (e) => {
