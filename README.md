@@ -5,12 +5,12 @@
 
 
 ```
-  **Onepage** 
+
 * Preview
-   * responsible
+
 > 🐹
 
-<img src="https://sujinhhh.github.io/youtubeStudy/shop.png" style=500>
+<img src="https://sujinhhh.github.io/img/shop-home.png" style="width:500px;">
   
 
 ➡️
