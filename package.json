@@ -4,11 +4,25 @@
   "description": "js project",
   "main": "app.js",
   "scripts": {
-    "test": "shoppiing cart"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "sujin",
   "license": "ISC",
   "dependencies": {
-    "firebase": "^8.2.7"
+    "firebase": "^8.2.7",
+    "sass": "^1.34.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sujinhhh/shop.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/sujinhhh/shop/issues"
+  },
+  "homepage": "https://github.com/sujinhhh/shop#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
   }
 }

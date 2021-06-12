@@ -73,11 +73,12 @@ class UI {
         button.disabled = true;
       }
       button.addEventListener("click", (e) => {
-        e.target.innerText = "In Cart->";
+        e.target.innerText = "In Cart";
         // e.target.disabled = true;
         e.target.disabled = true;
         // get product from products
         let cartItem = { ...Storage.getProduct(id), amount: 1 };
+        console.log(cartItem);
 
         //  add product to the cart
         cart = [...cart, cartItem];
@@ -188,7 +189,7 @@ class UI {
     Storage.saveCart(cart);
     let button = this.getSingleButton(id);
     button.disabled = false;
-    button.innerHTML = `<i class="fas fa-shopping-cart"><i/>add to cart`;
+    button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to cart`;
   }
 
   getSingleButton(id) {

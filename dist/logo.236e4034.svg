@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 519 186" width="519" height="186">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #cbf5fa } 
+		.shp1 { fill: #2dd8ec } 
+		.txt2 { font-size: 24px;fill: #1a1a1a;font-weight: 900;font-style: italic;font-family: "Lato-BlackItalic", "Lato" } 
+		.shp3 { fill: #1a1a1a } 
+		.txt4 { font-size: 61px;fill: #1a1a1a;font-weight: 700;font-style: italic;font-family: "CormorantInfant-BoldItalic", "Cormorant Infant" } 
+	</style>
+	<path id="Shape 1" class="shp0" d="M127 -341" />
+	<g id="acorn">
+		<path id="Layer" class="shp1" d="M433.15 72.2C404.71 58.49 385.93 56.46 378.31 67.63C366.12 85.91 366.12 112.82 371.2 133.13C374.76 147.86 382.88 159.54 394.56 169.69C405.22 176.29 423.5 174.26 434.67 170.71C457.52 163.6 474.28 149.38 486.97 129.07C498.65 109.77 476.31 96.06 463.11 86.92C459.05 83.88 437.72 74.23 433.15 72.2L433.15 72.2Z" />
+		<path id="Layer" class="shp1" d="M501.19 108.25C500.68 115.87 492.56 116.37 492.56 116.37C494.59 107.23 484.44 98.09 472.25 89.97C453.97 78.29 433.66 68.14 414.87 62.55C399.13 58.49 385.42 53.92 379.33 64.07C379.33 64.07 374.76 57.47 379.33 52.39C396.59 30.05 429.09 22.94 456 33.1C458.03 19.39 472.25 3.14 479.36 5.17C486.97 7.71 491.54 17.87 491.04 19.9C490.53 21.93 477.83 20.91 472.76 29.04C470.73 32.59 469.2 36.15 468.19 38.68C490.53 51.38 505.76 75.75 501.19 108.25Z" />
+	</g>
+	<text id="` " style="transform: matrix(1,0,0,1,1045,30)" >
+		<tspan x="0" y="24" class="txt2">`</tspan>
+	</text>
+	<path id="Bar" class="shp3" d="M11.35 68.2L20.65 68.2L20.65 165.8L11.35 165.8L11.35 68.2Z" />
+	<text id="Beeyond delicious. " style="transform: matrix(1,0,0,1,72.229,157.257)" >
+		<tspan x="0" y="0" class="txt2">Beeyond delicious.</tspan>
+	</text>
+	<text id="Order. Home Food " style="transform: matrix(1,0,0,1,36.333,117)" >
+		<tspan x="0" y="0" class="txt4">Order. Home Food</tspan>
+	</text>
+</svg>

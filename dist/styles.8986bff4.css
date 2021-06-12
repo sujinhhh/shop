@@ -132,18 +132,10 @@ body {
 }
 .banner {
   text-align: center;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-size: 10%;
-  animation: footer-animation 5s infinite alternate;
+  background: rgba(255, 255, 255, 0.8);
   display: inline-block;
   padding: 2rem;
 }
-
-.banner:hover {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  transition: all 0.5s ease;
-}
-
 .banner-title {
   font-size: 3.4rem;
   text-transform: uppercase;
@@ -370,21 +362,5 @@ body {
   padding-left: 20px;
 }
 
-.page-footer {
-  background-image: linear-gradient(40deg, #fbc2eb 40%, #a6c1ee 100%);
-  background-size: 400%;
-  animation: footer-animation 5s infinite alternate;
-}
 
-.page-footer:hover {
-  background-image: linear-gradient(40deg, #fbc2eb 40%, #a6c1ee 100%);
-}
-
-@keyframes footer-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
-}
+/*# sourceMappingURL=/styles.8986bff4.css.map */
