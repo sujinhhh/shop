@@ -60,7 +60,9 @@ body {
   background: var(--mainWhite);
   font-family: "Poppins", sans-serif;
 }
-
+a {
+  transition: all 1s ease-in-out;
+}
 /* --------------- Navbar ---------------- */
 .navbar {
   position: sticky;
@@ -171,6 +173,7 @@ body {
 
 .products {
   padding: 4rem 0;
+  position: relative;
 }
 .section-title h2 {
   text-align: center;
@@ -225,6 +228,15 @@ body {
   min-height: 12rem;
   transition: var(--mainTransition);
 }
+
+.img-container::before {
+  content: "new";
+  position: absolute;
+  background-color: red;
+  color: white;
+  padding: 0 0.5rem;
+}
+
 .img-container:hover .product-img {
   opacity: 0.5;
 }
@@ -244,7 +256,13 @@ body {
   color: var(--primaryColor);
   text-align: center;
 }
-
+[data-text="false"] {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* ---------------End of Products ---------------- */
 
 /* --------------- Cart ---------------- */
