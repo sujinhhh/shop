@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<head>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oder.Home Food</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous"
+  />
+  <!-- materialize -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  />
+  <!-- custom css -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="scss/main.scss" />
+
+        }
+</head>
+<body>
+  <!-- nav bar -->
+  <div class="navbar">
+    <div class="navbar-center">
+      <a href="https://sujinhhh.github.io/shop/">
+        <img
+          src="./images/logo.svg"
+          alt=""
+          style="margin-left: 10px; width: 200px"
+        />
+      </a>
+      <!-- Authentication -->
+      <div class="nav-wrapper container">
+        <ul id="nav-mobile" class="auth">
+          <li class="logged-out" style="display: none">
+            <a
+              href="company.html"
+              >company</a
+            >
+          </li>
+          <li class="logged-in" style="display: none">
+            <a
+              href="#"
+              class="grey-text modal-trigger"
+              data-target="modal-account"
+              >Account</a
+            >
+          </li>
+          <li class="logged-in" style="display: none">
+            <a href="#" class="grey-text" id="logout">Logout</a>
+          </li>
+          <li class="logged-in" style="display: none">
+            <a
+              href="#"
+              class="grey-text modal-trigger"
+              data-target="modal-create"
+              >Create Guide</a
+            >
+          </li>
+          <li class="logged-out" style="display: none">
+            <a
+              href="#"
+              class="grey-text modal-trigger"
+              data-target="modal-login"
+              >Login</a
+            >
+          </li>
+          <li class="logged-out" style="display: none">
+            <a
+              href="#"
+              class="grey-text modal-trigger"
+              data-target="modal-signup"
+              >Sign up</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- SIGN UP MODAL -->
+      <div id="modal-signup" class="modal">
+        <div class="modal-content">
+          <h4>Sign up</h4>
+          <br />
+          <form id="signup-form">
+            <div class="input-field">
+              <input type="email" id="signup-email" required />
+              <label for="signup-email">Email address</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="signup-password" required />
+              <label for="signup-password">Choose password</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="signup-bio" required />
+              <label for="signup-bio">One Line Bio</label>
+            </div>
+            <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+          </form>
+        </div>
+      </div>
+      <!-- LOGIN MODAL -->
+      <div id="modal-login" class="modal">
+        <div class="modal-content">
+          <h4>Login</h4>
+          <br />
+          <form id="login-form">
+            <div class="input-field">
+              <input type="email" id="login-email" required />
+              <label for="login-email">Email address</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="login-password" required />
+              <label for="login-password">Your password</label>
+            </div>
+            <button class="btn yellow darken-2 z-depth-0">Login</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- ACCOUNT MODAL -->
+      <div id="modal-account" class="modal">
+        <div class="modal-content center-align">
+          <h4>Account details</h4>
+          <br />
+          <div class="account-details"></div>
+          <div class="account-extras"></div>
+        </div>
+      </div>
+
+      <!-- CREATE GUIDE MODAL -->
+      <div id="modal-create" class="modal">
+        <div class="modal-content">
+          <h4>Create Guide</h4>
+          <br />
+          <form id="create-form">
+            <div class="input-field">
+              <input type="text" id="title" required />
+              <label for="title">Guide Title</label>
+            </div>
+            <div class="input-field">
+              <textarea
+                id="content"
+                class="materialize-textarea"
+                required
+              ></textarea>
+              <label for="content">Guide Content</label>
+            </div>
+            <button class="btn yellow darken-2 z-depth-0">Create</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Authentication End-->
+      <div class="cart-btn">
+        <span class="nav-icon">
+          <i class="fas fa-cart-plus"></i>
+        </span>
+        <div class="cart-items">0</div>
+      </div>
+      <!-- menu icon -->
+      <div class="burger">
+        <div class="burger__patty"></div>
+      </div>
+
+      <!-- --- ㅔ메뉴 끝 -->
+    </div>
+  </div>
+
+
+
+   <!-- contents -->
+   <div class="company">
+       <div class="welcome">
+           <p> Welcome to </p>
+            <p class='com-title'>Order. Home Food</p>
+        </div>
+       <div class="com-pic">
+             <img class="company-pic" src="https://images.unsplash.com/photo-1514986888952-8cd320577b68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80" alt="">
+             <span class="com-intro">
+                 Looking for food to make for dinner tonight? These recipes are comfort food at its best. From homemade chicken potpie to mom's meatloaf, make these comforting dinner foods when you need a home-cooked meal.
+             </span>
+      </div>
+   </div>
+
+   <div style="display: grid; grid-template-columns:1fr 1fr 1fr ;height:50px;column-gap: 4px; margin-bottom: 4px;">
+    <div style="background-color:rgb(167, 250, 250);"></div>
+    <div style="background-color:rgb(241, 181, 247);"></div>
+    <div style="background-color:rgb(228, 250, 167);"></div>
+   </div>
+ <div style="display: flex; height: 100px;">
+    <div style="background-color: rgb(215, 250, 217);flex: 1; "></div>
+     <div style="background-color: rgb(215, 248, 250); width: 400px;  text-align: center;">
+        <img style="width: 170px;" src="https://cdn.pixabay.com/photo/2012/04/11/17/31/vegetables-29063__180.png" alt="">
+    </div>
+    <div style="background-color: rgb(250, 215, 215); flex: 2; color: grey; padding-left: 4px; text-align: center; padding-top: 30px;">
+       <p>We believe that clean eating should be easy and effortless</p>
+   </div>
+ </div>
+ <!-- FOOTER -->
+ <footer class="page-footer">
+    <div class="container center">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">
+            You can use rows and columns here to organize your footer content.
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul class="col s6">
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">About Company</a>
+            </li>
+            <li><a class="grey-text text-lighten-3" href="#!">Product</a></li>
+          </ul>
+          <ul class="col s6">
+            <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!"
+                >Customer Service</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright teal lighten-2">
+      <div class="container">
+        © 2021 Copyright Text
+
+        <!-- Social Links -->
+        <div class="grey-text text-lighten-4 right">
+          <ul class="social-links">
+            <li>
+              <a href="#!">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="fab fa-behance"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="fab fa-sketch"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

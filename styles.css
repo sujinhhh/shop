@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,100;1,200&display=swap");
 
 :root {
-  --primaryColor: #f09d51;
+  --primaryColor: #fc5f04;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #ececec;
@@ -157,7 +157,7 @@ a {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   font-size: 1rem;
-  background: var(--primaryColor);
+  background: var(--mainWhite);
   color: var(--mainBlack);
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
@@ -204,6 +204,7 @@ a {
   top: 70%;
   right: 0;
   background: var(--primaryColor);
+  color: var(--mainWhite);
   border: none;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
@@ -405,4 +406,32 @@ a {
   100% {
     background-position: right;
   }
+}
+
+/* --------------- End of Cart ---------------- */
+
+.welcome {
+  padding-top: 40px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.com-title {
+  font-size: 40px;
+  color: var(--primaryColor);
+}
+.com-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.company-pic {
+  width: 70vw;
+  max-height: 60vh;
+  object-fit: contain;
+}
+.com-intro {
+  margin: 4rem 0;
+  max-width: 50vw;
 }
